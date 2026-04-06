@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Hypnotic Web — Агентство скролл-лендингов</title>
+  <meta
+    name="description"
+    content="Лендинги, которые гипнотизируют. Заставьте клиентов доскроллить до конца."
+  />
+  <link rel="stylesheet" href="style.css?v=5" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-brand">HYPNOTIC WEB</div>
+    <div class="loader-bar-track">
+      <div id="loader-bar"></div>
+    </div>
+    <div id="loader-percent">0%</div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <a href="#hero" class="header-logo">Hypnotic Web</a>
+
+    <nav aria-label="Основная навигация">
+      <ul class="header-nav">
+        <li><a href="#services">Проблема</a></li>
+        <li><a href="#cases">Возможности</a></li>
+        <li><a href="#team">Команда</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Заказ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Floating CTA -->
+  <a href="#contact" class="floating-cta">Ваш сайт</a>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="section-hero" id="hero">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <span class="hero-label">Web / Development</span>
+
+          <h1 class="hero-heading">
+            Лендинги,<br />
+            которые<br />
+            гипнотизируют
+          </h1>
+
+          <p class="hero-tagline">
+            Хватит делать шаблонные визитки. Мы создаём кинематографичный визуал, в который клиенты влюбляются (и куда затем несут деньги).
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="cta-button">Заказать ВАУ-эффект</a>
+            <a href="#cases" class="secondary-button">Что вы получаете?</a>
+          </div>
+
+          <div class="hero-trust">
+            <div class="trust-item">
+              <span class="trust-number">100+</span>
+              <span class="trust-label">Скучных сайтов<br/> убито</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-number">99%</span>
+              <span class="trust-label">доскроллов<br/> до конца</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-number">1</span>
+              <span class="trust-label">шанс на<br/> первое впечатление</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-fade"></div>
+    </section>
+
+    <!-- VIDEO SEQUENCE -->
+    <section id="video-sequence">
+      <div class="video-sequence-sticky">
+        <canvas id="sequence-canvas"></canvas>
+
+<div class="sequence-darken" aria-hidden="true"></div>
+<div class="sequence-noise" aria-hidden="true"></div>
+<div class="sequence-vignette" aria-hidden="true"></div>
+<div class="sequence-overlay" aria-hidden="true"></div>
+
+        <div class="marquee-wrap sequence-marquee">
+          <div class="marquee-text">УПРАВЛЯЙ ВНИМАНИЕМ / ПРОБИВАЙ БАННЕРНУЮ СЛЕПОТУ / СОЗДАВАЙ ЖЕЛАНИЕ /</div>
+        </div>
+
+        <div id="scroll-container">
+
+          <!-- 1 -->
+          <section class="scroll-section align-left"
+                   data-enter="0.00"
+                   data-leave="0.22"
+                   data-animation="slide-left"
+                   id="services">
+            <div class="section-inner glass-morphism luxury-panel">
+              <span class="section-label">001 / Твой текущий сайт</span>
+              <h2 class="section-heading">Проблема</h2>
+
+              <div class="feature-list">
+                <div class="feature-item">
+                  <div class="feature-icon">I</div>
+                  <div>
+                    <h3>Код-Копипаста</h3>
+                    <p>Твой сайт выглядит точно так же, как у сотен конкурентов в нише. Никаких эмоций.</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-icon">II</div>
+                  <div>
+                    <h3>Скука убивает конверсию</h3>
+                    <p>Люди привыкли к ТикТоку и Динамике. Они закрывают сухое полотно текста на 5-й секунде.</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-icon">III</div>
+                  <div>
+                    <h3>Нулевое доверие</h3>
+                    <p>Трудно продавать премиум-услуги или сложный B2B продукт с дизайном из 2012 года.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 2 -->
+          <section class="scroll-section align-right"
+                   data-enter="0.24"
+                   data-leave="0.46"
+                   data-animation="slide-right"
+                   id="why-us">
+            <div class="section-inner glass-morphism luxury-panel">
+              <span class="section-label">002 / Наш подход</span>
+              <h2 class="section-heading">Скролл-<br/>Сторителлинг</h2>
+              <p class="section-body">Мы создаём сайты, где прокрутка колёсика мыши (или свайп) превращается в путешествие.</p>
+              <p class="section-body">Вы сами сейчас это прекрасно чувствуете — невозможно оторваться от процесса. Именно такие эмоции будет испытывать ваш покупатель.</p>
+            </div>
+          </section>
+
+          <!-- 3 -->
+          <section class="scroll-section section-stats"
+                   data-enter="0.48"
+                   data-leave="0.70"
+                   data-animation="stagger-up"
+                   id="results">
+            <div class="section-inner glass-morphism luxury-panel">
+              <span class="section-label">003 / В цифрах</span>
+              <h2 class="section-heading">Эффект</h2>
+
+              <div class="stats-grid">
+                <div class="stat">
+                  <div><span class="stat-number" data-value="300">0</span><span class="stat-suffix">%</span></div>
+                  <span class="stat-label">Рост времени на сайте</span>
+                </div>
+
+                <div class="stat">
+                  <div><span class="stat-number" data-value="5">0</span><span class="stat-suffix">x</span></div>
+                  <span class="stat-label">Больше заявок</span>
+                </div>
+
+                <div class="stat">
+                  <div><span class="stat-number" data-value="0">100</span><span class="stat-suffix"></span></div>
+                  <span class="stat-label">Равнодушных пользователей</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 4 -->
+          <section class="scroll-section align-left"
+                   data-enter="0.72"
+                   data-leave="0.96"
+                   data-animation="slide-left"
+                   id="process">
+            <div class="section-inner glass-morphism luxury-panel">
+              <span class="section-label">004 / Механика Макгии</span>
+              <h2 class="section-heading">Под капотом</h2>
+
+              <div class="feature-list">
+                <div class="feature-item">
+                  <div class="feature-icon">I</div>
+                  <div>
+                    <h3>Исследование боли</h3>
+                    <p>Находим триггеры, которые заставят вашу целевую аудиторию сказать: "Ого, это про меня!".</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-icon">II</div>
+                  <div>
+                    <h3>Режиссура</h3>
+                    <p>Пишем сценарий для плавного появления каждого блока. Это как кино, только интерактивное.</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-icon">III</div>
+                  <div>
+                    <h3>Магия HTML5</h3>
+                    <p>Кодим анимации на 60fps без тормозов. Ваш сайт будет летать даже на старых смартфонах.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CASES -->
+    <section id="cases" class="horizontal-cases">
+      <div class="cases-sticky">
+        <div class="cases-header reveal">
+          <span class="section-label">005 / Примеры интеграций</span>
+          <h2 class="section-heading">Больше, чем просто фото</h2>
+          <p class="section-body max-w-text">
+            Здесь мы можем разместить 3D-модели, интерактивные бегущие строки или даже сочные видео-витрины (нажмите на плей в карточках ниже).
+          </p>
+        </div>
+
+        <div class="cases-track" id="cases-track">
+          <article class="case-card">
+            <div class="case-image">
+              <div class="case-placeholder">Витрина 1</div>
+              <div class="play-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+              </div>
+            </div>
+            <div class="case-info">
+              <h3>B2B Презентация</h3>
+              <p>Видео-бэкграунд для сложного IT продукта.</p>
+              <span class="case-meta">Формат: Видео</span>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <div class="case-image">
+              <div class="case-placeholder">Витрина 2</div>
+            </div>
+            <div class="case-info">
+              <h3>Архитектура</h3>
+              <p>Интерактивная галерея рендеров.</p>
+              <span class="case-meta">Формат: Статика + Parallax</span>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <div class="case-image">
+              <div class="case-placeholder">Витрина 3</div>
+              <div class="play-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+              </div>
+            </div>
+            <div class="case-info">
+              <h3>Beauty Сфера</h3>
+              <p>Анимация до/после для косметологии.</p>
+              <span class="case-meta">Формат: Видео-слайдер</span>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <div class="case-image">
+              <div class="case-placeholder">Витрина 4</div>
+            </div>
+            <div class="case-info">
+              <h3>Автодилер</h3>
+              <p>Панорамный 360-обзор салона.</p>
+              <span class="case-meta">Формат: WebGL Интерактив</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team" class="section-team normal-section">
+      <div class="container">
+        <span class="section-label reveal">006 / Команда</span>
+        <h2 class="section-heading reveal">Магистры кода и дизайна</h2>
+
+        <div class="team-list">
+          <div class="team-member reveal">
+            <div class="team-member-name">Максим</div>
+            <div class="team-member-role">Архитектор анимаций / 10 лет опыта</div>
+          </div>
+          <div class="team-member reveal">
+            <div class="team-member-name">Анна</div>
+            <div class="team-member-role">Арт-директор / Королева типографики</div>
+          </div>
+          <div class="team-member reveal">
+            <div class="team-member-name">Денис</div>
+            <div class="team-member-role">Техлид / Оптимизатор кадров</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="normal-section section-block" id="faq">
+      <div class="container">
+        <div class="section-top reveal">
+          <span class="section-label">007 / FAQ</span>
+          <h2 class="section-heading">Частые вопросы</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>Сможете сделать такое для доставки бетона?</summary>
+            <p>Легко. И ваш бетон будет выглядеть сексуальнее, чем презентация нового iPhone.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Сколько это стоит?</summary>
+            <p>Такие проекты стоят дороже стандартных шаблонов. Но главное — они окупаются за счёт огромной конверсии и отстройки от конкурентов.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>А телефон не загнётся от таких анимаций?</summary>
+            <p>Нет. Мы используем секретные технологии оптимизации Canvas и CSS3. 60 FPS даже на устройствах трёхлетней давности.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Как долго вы это делаете?</summary>
+            <p>Обычно от 3 до 6 недель в зависимости от сложности сценария и объёма 3D/видео контента.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section-cta normal-section">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <span class="section-label">008 / Аудит</span>
+          <h2 class="section-heading">Давайте обсудим ваш ВАУ-проект</h2>
+          <p class="section-body max-w-text">
+            Оставьте заявку. Мы бесплатно разберём ваш текущий сайт и придумаем кино-сценарий для нового.
+          </p>
+        </div>
+
+        <form class="lead-form reveal" id="lead-form">
+          <label>
+            <span>Имя</span>
+            <input type="text" name="name" placeholder="Как к вам обращаться?" required />
+          </label>
+
+          <label>
+            <span>Телефон или Telegram</span>
+            <input type="text" name="phone" placeholder="@username или номер" required />
+          </label>
+
+          <button type="submit" class="cta-button form-submit">Хочу разбор сайта</button>
+          <p class="form-note">Кнопка отправляет заявку прямо в наш штаб.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <h2 class="footer-logo">HYPNOTIC WEB</h2>
+    </div>
+
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Адрес</h4>
+        <p>127.0.0.1 (Мы цифровые кочевники)</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Связь</h4>
+        <p>agency@hypnotic.web<br />Telegram: @hypnoweb</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Режим работы</h4>
+        <p>Круглосуточно пишем код<br />(Спим по очереди)</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Соцсети</h4>
+        <a href="#">Dribbble</a><br />
+        <a href="#">Awwwards</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Hypnotic Web. Все права защищены и анимированы.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
