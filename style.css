@@ -632,7 +632,7 @@ textarea {
 }
 
 .section-stats .section-inner {
-  max-width: 1000px;
+  max-width: 1100px;
   text-align: center;
   margin: 0 auto;
   padding: 4rem;
@@ -641,9 +641,9 @@ textarea {
 .stats-grid {
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 4rem;
   margin-top: 3rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .stat {
